@@ -13,7 +13,8 @@ module.exports = {
     publicPath: "/"
   },
   devServer: {
-    contentBase: "dist",
+    contentBase: path.join(__dirname, "../dist"),
+    writeToDisk: true,
     overlay: true,
     stats: {
       colors: true

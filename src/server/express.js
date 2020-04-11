@@ -20,7 +20,7 @@ server.use(webpackDevMiddleware)
 server.use(webpackHotMiddlware)
 console.log("Middleware enabled")
 
-const staticMiddleware = express.static("dist")
+const staticMiddleware = express.static(path.resolve(__dirname, "../dist"))
 server.use(staticMiddleware)
 
 const PORT = 8080
